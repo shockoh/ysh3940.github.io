@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+    
+    <entry>
+      <title><![CDATA[java程序执行（在内存中）]]></title>
+      <url>%2F2017%2F02%2F19%2Fjava%E7%A8%8B%E5%BA%8F%E6%89%A7%E8%A1%8C%EF%BC%88%E5%9C%A8%E5%86%85%E5%AD%98%E4%B8%AD%EF%BC%89%2F</url>
+      <content type="text"><![CDATA[]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[java冒泡排序]]></title>
+      <url>%2F2017%2F02%2F19%2Fjava%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%2F</url>
+      <content type="text"><![CDATA[冒泡排序算法 123456789101112131415161718/** * 冒泡排序 * * @param array */public void MaoPaoSort(int[] array) &#123; for (int i = 0; i &lt; array.length; i++) &#123; // 索引i的值依次与后面所有的值比较,找出最小的值 for (int j = i + 1; j &lt; array.length; j++) &#123; if (array[i] &gt; array[j]) &#123; // 交换2个数的位置 int temp = array[i]; array[i] = array[j]; array[j] = temp; &#125; &#125; &#125;&#125;]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[Ubuntu添加开机启动程序（开机启动svn服务）]]></title>
+      <url>%2F2017%2F02%2F19%2FUbuntu%E6%B7%BB%E5%8A%A0%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8%E7%A8%8B%E5%BA%8F%EF%BC%88%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8svn%E6%9C%8D%E5%8A%A1%EF%BC%89%2F</url>
+      <content type="text"><![CDATA[ubuntu12.04添加开机启动程序(开机启动svn服务)环境：ubuntu12.04 在/etc/init.d目录建立一个脚本文件svnd.shcd /etc/init.d touch svnd.sh chmod +x svnd.sh vim svnd.sh 输入如下内容： #!/bin/bash #svnserve startup svnserve -d -r /ysh/svn 更新修改权限： update-rc.d svnd.sh defaults]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[nginx安装以及简单配置]]></title>
+      <url>%2F2017%2F02%2F19%2Fnginx%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE%2F</url>
+      <content type="text"><![CDATA[Nginx安装以及简单配置Linux环境：ubuntu 12.04 nginx可以使用各平台的默认包来安装，本文是介绍使用源码编译安装，包括具体的编译参数信息。 正式开始前，编译环境gcc g++ 开发库之类的需要提前装好，这里默认你已经装好。ububtu平台编译环境可以使用以下指令 apt-get install build-essentialapt-get install libtoolcentos平台编译环境使用如下指令 安装make： yum -y install gcc automake autoconf libtool make安装g++: yum install gcc gcc-c++ 下面正式开始一般我们都需要先装pcre, zlib，前者为了重写rewrite，后者为了gzip压缩。1.选定源码目录可以是任何目录，本文选定的是/usr/local/src cd /usr/local/src2.安装PCRE库ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/ 下载最新的 PCRE 源码包，使用下面命令下载编译和安装 PCRE 包： cd /usr/local/srcwget ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.34.tar.gztar -zxvf pcre-8.34.tar.gzcd pcre-8.34./configuremakemake install3.安装zlib库http://zlib.net/zlib-1.2.8.tar.gz 下载最新的 zlib 源码包，使用下面命令下载编译和安装 zlib包： cd /usr/local/srcwget wget http://zlib.net/zlib-1.2.8.tar.gztar -zxvf zlib-1.2.8.tar.gzcd zlib-1.2.8./configuremakemake install4.安装ssl（某些vps默认没装ssl) cd /usr/local/srcwget http://www.openssl.org/source/openssl-1.0.1c.tar.gztar -zxvf openssl-1.0.1c.tar.gz5.安装nginx Nginx 一般有两个版本，分别是稳定版和开发版，您可以根据您的目的来选择这两个版本的其中一个，下面是把 Nginx 安装到 /usr/local/nginx 目录下的详细步骤： cd /usr/local/srcwget http://nginx.org/download/nginx-1.4.2.tar.gztar -zxvf nginx-1.4.2.tar.gzcd nginx-1.4.2./configure –sbin-path=/usr/local/nginx/nginx \–conf-path=/usr/local/nginx/nginx.conf \–pid-path=/usr/local/nginx/nginx.pid \–with-http_ssl_module \–with-pcre=/usr/local/src/pcre-8.34 \–with-zlib=/usr/local/src/zlib-1.2.8 \–with-openssl=/usr/local/src/openssl-1.0.1c makemake install–with-pcre=/usr/src/pcre-8.34 指的是pcre-8.34 的源码路径。–with-zlib=/usr/src/zlib-1.2.7 指的是zlib-1.2.7 的源码路径。 安装成功后 /usr/local/nginx 目录下如下 fastcgi.conf koi-win nginx.conf.defaultfastcgi.conf.default logs scgi_paramsfastcgi_params mime.types scgi_params.defaultfastcgi_params.default mime.types.default uwsgi_paramshtml nginx uwsgi_params.defaultkoi-utf nginx.conf win-utf6.启动确保系统的 80 端口没被其他程序占用，运行/usr/local/nginx/nginx 命令来启动 Nginx， netstat -ano|grep 80如果查不到结果后执行，有结果则忽略此步骤（ubuntu下必须用sudo启动，不然只能在前台运行） sudo /usr/local/nginx/nginx 一个简单的负载均衡的示例，把www.domain.com均衡到本机不同的端口，也可以改为均衡到不同的地址上。 http {upstream myproject {server 127.0.0.1:8000 weight=3;server 127.0.0.1:8001;server 127.0.0.1:8002;server 127.0.0.1:8003;} server {listen 80;server_name www.domain.com;location / {proxy_pass http://myproject;}}}]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[zookeeper集群搭建]]></title>
+      <url>%2F2017%2F02%2F19%2Fzookeeper%E9%9B%86%E7%BE%A4%E6%90%AD%E5%BB%BA%2F</url>
+      <content type="text"><![CDATA[zookeeper集群搭建记录（特别注意要关闭服务器的防火墙） 搭建环境：redhat 6.4搭建环境：redhat 6.4 1、关闭防火墙：service iptables stop chkconfig iptables off（不关闭防火墙zookeeper之间通讯会报错） 2、修改zoo.cfg配置文件 tickTime=2000 initLimit=10 syncLimit=5 dataDir=/home/hadoop/zookeeper（在我们配置的dataDir指定的目录下面，创建一个myid文件，里面内容为一个数字，用来标识当前主机，conf/zoo.cfg文件中配置的server.X中X为什么数字，则myid文件中就输入这个数字） clientPort=2181 dataLogDir=/home/hadoop/zookeeper/logs（这个要自己创建） server.1=192.168.252.131:2888:3888 server.2=192.168.252.132:2888:3888 server.3=192.168.252.133:2888:3888 3、启动并检查zookeeper bin/zkServer.sh start bin/zkServer.sh status]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[redhat常用命令]]></title>
+      <url>%2F2017%2F02%2F18%2Fredhat%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
+      <content type="text"><![CDATA[redhat常用命令（此文中涉及到的命令是我在工作中用到的） 1、修改redhat主机名 vim /etc/sysconfig/network（需要重启） 2、安装jdk（root用户） vim /etc/profile export JAVA_HOME=/usr/java/jdk1.7.0_45 export CLASSPATH=”.:/usr/java/jdk1.7.0_45/lib:/usr/java/jdk1.7.0_45/jre/lib” pathmunge /usr/java/jdk1.7.0_45/bin:/usr/java/jdk1.7.0_45/jre/bin export PATH USER LOGNAME MAIL HOSTNAME HISTSIZE HISTCONTROL source /etc/profile 3、配置ssh无密码登录 ssh-keygen -t rsa -P ‘’ -f ~/.ssh/id_rsa cat ~/.ssh/id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys chmod 600 ~/.ssh/authorized_keys ssh localhost 4、关闭防火墙（重启失效） service iptables stop chkconfig iptables off(root下永久) service iptables start 安装后注意关闭防火墙：service iptables stopchkconfig iptables off 5、设置时区（root用户） cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime（设置时区） ntpdate cn.pool.ntp.org（cn.pool.ntp.org是位于中国的公共NTP服务器，用来同步你的时间）]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[ubuntu常用命令]]></title>
+      <url>%2F2017%2F02%2F18%2Fubuntu%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
+      <content type="text"><![CDATA[ubuntu常用命令（此文中涉及到的命令是我在工作中用到的） 1、修改root用户密码 sudo passwd root 注意：创建用户使用adduser命令 2、ssh安装 sudo apt-get install openssh-server 查看sshd服务是否启动：ps -ef | grep sshd 设置shh不用密码登录： ssh-keygen -t rsa -P ‘’ -f ~/.ssh/id_rsa cat ~/.ssh/id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys ssh localhost 3、设置java环境变量 #set java environment export JAVA_HOME=[java安装路径] export JRE_HOME=$JAVA_HOME/jre export CLASSPATH=.:$JAVA_HOME/lib:$JRE_HOME/lib:$CLASSPATH export PATH=.:$JAVA_HOME/bin:$JRE_HOME/bin:$PATH 4、vsftpd安装 sudo apt-get install vsftpd 配置FTP： sudo vi /etc/vsftpd.conf 进入后找到第26~29行 确定26行的local_enable=yes 并把29行write_enable=yes 重启一下FTP服务： sudo /etc/init.d/vsftpd restart 5、ubuntu安装mysql sudo apt-get install mysql-server sudo netstat -tap|grep 3306 或 sudo ps -ef | grep mysql 安装完成后通过修改/etc/mysql/my.cnf(此文件为mysql的配置文件)，将文件中的binding-address=127.0.0.1注释掉 登录mysql：mysql -u root -p（如果要查看数据库使用的字符集，可以输入show variables like ‘character%’;） 修改mysql默认数据库的编码： 在某些时候，我们续要修改mysql默认数据库的编码，以保证某些迁移的程序可以正常显示，编辑my.cnf文件进行编码修改 在ubuntu下修改/etc/mysql/my.cnf文件 在找到[mysqld]添加init_connect=’SET NAMES utf8’character-set-server=utf8 修改好后，重新启动mysql即可:/etc/init.d/mysql start(stop,restart)，查询一下show variables like ‘character%’; 6、SSH端口转发 ssh -C -f -N -g -L 8096:127.0.0.1:80 ubuntu@192.168.6.82（将本机的8096端口映射到192.168.6.82的80端口上）]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[vi编辑器]]></title>
+      <url>%2F2017%2F02%2F18%2Fvi%E7%BC%96%E8%BE%91%E5%99%A8%2F</url>
+      <content type="text"><![CDATA[vi编辑器使用指南 启动vi vi [文件路径] 退出vi编辑模式（保存并退出） :wq [新文件名，如果是编辑的新文件的话] 退出vi编辑模式（仅当修改了当前编辑内容，才做保存） :ZZ 和 :x退出vi编辑模式（不保存退出） :q! 从编辑模式退出到命令模式 ESC 命令状态下,进入文本输入模式 i（在当前光标覆盖的字符前面插入），I（在当前行之首插入字符） 命令状态下,进入文本附加模式 a（在当前光标覆盖的字符后面插入），A（在当前行之尾插入字符） 命令状态下,进入文本打开新行模式 o (在当前行的下面打开一个新行，并且在新行进行插入字符),O(在当前行的上面打开一个新行，并且在新行进行插入字符) 命令状态下,进入移动光标模式 键盘上的上下左右，键盘上的h，j，k，l四个键，还有空格，退格，Ctrl+N，Ctrl+P，都可以进行光标的上下左右移动 命令状态下,进入打开编辑多个文件模式 vi [文件路径1] [文件路径2]，打开之后只会看到第一个文件的内容，如果想看到第二个文件，按ESC，然后输入转义命令:next,就会看到第二个文件，如果想看到前一个文件就输入：prev 命令状态下,进入同时编辑多个文件模式 大致同上，只是在上面vi的后面加一个 -o 命令状态下,进入文本替换模式 r（r了之后输入要替换的字符） 命令状态下,进入文本删除模式 x（删除当前字符），dd（删除当前行） 命令状态下,进入文本查找模式 ?[要查找的字符串]再回车，如果有多处被查找到，使用n和N可以进行来回查看 命令状态下,进入文本复制模式 yw(复制一个单词)，y$（复制光标到行尾），yy或Y（复制整行） 命令状态下,进入文本粘贴模式 p（粘贴到当前光标的后面） 命令状态下,进入文本剪切模式 vi中的每一次删除动作都是剪切，将删除掉内容剪切到剪切板 命令状态下,进入文本复写模式 进入文本输入模式并且插入一段字符串之后，按ESC退回命令模式，再点”.”,系统就会自动进行你刚才的插入动作 命令状态下,进入文本撤销模式 比如，当你刚刚删除了一行之后，想要恢复删除的一行，就按u，恢复一次操作。 转义状态下，使光标移动到指定行的行首或指定位置 命令方式下，输入:20，就是将光标移动到20行的行首。如果想移动到指定字符串所在行，就输入“: /[字符串]”，就能找到该字符串所在行，如果有多处，可以按n进行切换位置。]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[终于把个人博客搭建好了，嘻嘻]]></title>
+      <url>%2F2017%2F02%2F18%2F%E7%BB%88%E4%BA%8E%E6%8A%8A%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%A5%BD%E4%BA%86%EF%BC%8C%E5%98%BB%E5%98%BB%2F</url>
+      <content type="text"><![CDATA[使用hexo+github搭建免费个人博客详细教程http://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html建议参考这个链接来搭建个人博客，其他文章太坑了，写的一点都不全，让你搭建起来非常吃力。还有就是git和nodejs一定要安装最新的版本，不然中间会遇到各种各样的坑。反正我是参考这个已经搭建好了，嘻嘻。]]></content>
+    </entry>
+
+    
+  
+  
+</search>
