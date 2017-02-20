@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Java," />
+  <meta name="keywords" content="Kafka,MQ," />
 
 
 
@@ -87,15 +87,19 @@
 
 
 
+<meta name="description" content="应用场景方面RabbitMQ,遵循AMQP协议，由内在高并发的erlanng语言开发，用在实时的对可靠性要求比较高的消息传递上。
+kafka是Linkedin于2010年12月份开源的消息发布订阅系统,它主要用于处理活跃的流式数据,大数据量的数据处理上。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="java程序执行（在内存中）">
-<meta property="og:url" content="http://www.shenhuiyang.com/2017/02/19/java程序执行（在内存中）/index.html">
+<meta property="og:title" content="kafka与MQ比较">
+<meta property="og:url" content="http://www.shenhuiyang.com/2017/02/20/kafka与MQ比较/index.html">
 <meta property="og:site_name" content="楊晓川">
-<meta property="og:image" content="http://www.shenhuiyang.com/uploads/132423_eT0p_210108.jpg">
-<meta property="og:updated_time" content="2017-02-19T03:19:17.569Z">
+<meta property="og:description" content="应用场景方面RabbitMQ,遵循AMQP协议，由内在高并发的erlanng语言开发，用在实时的对可靠性要求比较高的消息传递上。
+kafka是Linkedin于2010年12月份开源的消息发布订阅系统,它主要用于处理活跃的流式数据,大数据量的数据处理上。">
+<meta property="og:updated_time" content="2017-02-20T14:29:59.727Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="java程序执行（在内存中）">
-<meta name="twitter:image" content="http://www.shenhuiyang.com/uploads/132423_eT0p_210108.jpg">
+<meta name="twitter:title" content="kafka与MQ比较">
+<meta name="twitter:description" content="应用场景方面RabbitMQ,遵循AMQP协议，由内在高并发的erlanng语言开发，用在实时的对可靠性要求比较高的消息传递上。
+kafka是Linkedin于2010年12月份开源的消息发布订阅系统,它主要用于处理活跃的流式数据,大数据量的数据处理上。">
 
 
 
@@ -123,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://www.shenhuiyang.com/2017/02/19/java程序执行（在内存中）/"/>
+  <link rel="canonical" href="http://www.shenhuiyang.com/2017/02/20/kafka与MQ比较/"/>
 
 
 
 
 
-  <title> java程序执行（在内存中） | 楊晓川 </title>
+  <title> kafka与MQ比较 | 楊晓川 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -309,7 +313,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://www.shenhuiyang.com/2017/02/19/java程序执行（在内存中）/">
+  <link itemprop="mainEntityOfPage" href="http://www.shenhuiyang.com/2017/02/20/kafka与MQ比较/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="楊晓川">
@@ -333,7 +337,7 @@
             
             
               
-                java程序执行（在内存中）
+                kafka与MQ比较
               
             
           </h1>
@@ -348,8 +352,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-19T11:08:01+08:00">
-                2017-02-19
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-20T21:24:51+08:00">
+                2017-02-20
               </time>
             
 
@@ -371,8 +375,19 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index">
-                    <span itemprop="name">Java</span>
+                  <a href="/categories/Kafka/" itemprop="url" rel="index">
+                    <span itemprop="name">Kafka</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Kafka/MQ/" itemprop="url" rel="index">
+                    <span itemprop="name">MQ</span>
                   </a>
                 </span>
 
@@ -388,7 +403,7 @@
 
           
           
-             <span id="/2017/02/19/java程序执行（在内存中）/" class="leancloud_visitors" data-flag-title="java程序执行（在内存中）">
+             <span id="/2017/02/20/kafka与MQ比较/" class="leancloud_visitors" data-flag-title="kafka与MQ比较">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -417,7 +432,16 @@
       
 
       
-        <p><img src="/uploads/132423_eT0p_210108.jpg" alt="java程序执行（在内存中）" title="java程序执行（在内存中）"></p>
+        <h1 id="应用场景方面"><a href="#应用场景方面" class="headerlink" title="应用场景方面"></a>应用场景方面</h1><p>RabbitMQ,遵循AMQP协议，由内在高并发的erlanng语言开发，用在实时的对可靠性要求比较高的消息传递上。</p>
+<p>kafka是Linkedin于2010年12月份开源的消息发布订阅系统,它主要用于处理活跃的流式数据,大数据量的数据处理上。<a id="more"></a></p>
+<h1 id="架构模型方面"><a href="#架构模型方面" class="headerlink" title="架构模型方面"></a>架构模型方面</h1><p>RabbitMQ遵循AMQP协议，RabbitMQ的broker由Exchange,Binding,queue组成，其中exchange和binding组成了消息的路由键；客户端Producer通过连接channel和server进行通信，Consumer从queue获取消息进行消费（长连接，queue有消息会推送到consumer端，consumer循环从输入流读取数据）。rabbitMQ以broker为中心；有消息的确认机制。</p>
+<p>kafka遵从一般的MQ结构，producer，broker，consumer，以consumer为中心，消息的消费信息保存的客户端consumer上，consumer根据消费的点，从broker上批量pull数据；无消息确认机制。</p>
+<h1 id="吞吐量"><a href="#吞吐量" class="headerlink" title="吞吐量"></a>吞吐量</h1><p>kafka具有高的吞吐量，内部采用消息的批量处理，zero-copy机制，数据的存储和获取是本地磁盘顺序批量操作，具有O(1)的复杂度，消息处理的效率很高。</p>
+<p>rabbitMQ在吞吐量方面稍逊于kafka，他们的出发点不一样，rabbitMQ支持对消息的可靠的传递，支持事务，不支持批量的操作；基于存储的可靠性的要求存储可以采用内存或者硬盘。</p>
+<h1 id="可用性方面"><a href="#可用性方面" class="headerlink" title="可用性方面"></a>可用性方面</h1><p>rabbitMQ支持miror的queue，主queue失效，miror queue接管。</p>
+<p>kafka的broker支持主备模式。</p>
+<h1 id="集群负载均衡方面"><a href="#集群负载均衡方面" class="headerlink" title="集群负载均衡方面"></a>集群负载均衡方面</h1><p>kafka采用zookeeper对集群中的broker、consumer进行管理，可以注册topic到zookeeper上；通过zookeeper的协调机制，producer保存对应topic的broker信息，可以随机或者轮询发送到broker上；并且producer可以基于语义指定分片，消息发送到broker的某分片上。</p>
+<p>rabbitMQ的负载均衡需要单独的loadbalancer进行支持。</p>
 
       
     </div>
@@ -457,7 +481,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Java/" rel="tag"># Java</a>
+            <a href="/tags/Kafka/" rel="tag"># Kafka</a>
+          
+            <a href="/tags/MQ/" rel="tag"># MQ</a>
           
         </div>
       
@@ -470,8 +496,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/02/19/java冒泡排序/" rel="next" title="java冒泡排序">
-                <i class="fa fa-chevron-left"></i> java冒泡排序
+              <a href="/2017/02/20/飞牛无限API项目简介/" rel="next" title="飞牛无限API项目简介">
+                <i class="fa fa-chevron-left"></i> 飞牛无限API项目简介
               </a>
             
           </div>
@@ -480,8 +506,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/02/20/git操作手册/" rel="prev" title="git操作手册">
-                git操作手册 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/02/20/美团点评复试/" rel="prev" title="美团点评复试">
+                美团点评复试 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -552,8 +578,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar.jpg"
@@ -611,6 +646,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#应用场景方面"><span class="nav-number">1.</span> <span class="nav-text">应用场景方面</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#架构模型方面"><span class="nav-number">2.</span> <span class="nav-text">架构模型方面</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#吞吐量"><span class="nav-number">3.</span> <span class="nav-text">吞吐量</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#可用性方面"><span class="nav-number">4.</span> <span class="nav-text">可用性方面</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#集群负载均衡方面"><span class="nav-number">5.</span> <span class="nav-text">集群负载均衡方面</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>
