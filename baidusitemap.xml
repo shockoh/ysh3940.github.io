@@ -4,6 +4,31 @@
 
     
   <url>
+    <loc>http://www.shenhuiyang.com/2017/02/23/API%E6%8E%A5%E5%8F%A3%E8%AE%BE%E8%AE%A1-%E6%B3%A8%E6%84%8F%E9%97%AE%E9%A2%98/</loc>
+    <lastmod>2017-02-23T14:02:53.137Z</lastmod>
+    <data>
+        <display>
+        <title>API接口设计 注意问题</title>
+        <pubTime>2017-02-23T13:56:48.000Z</pubTime>
+        
+        <tag>API</tag>
+         
+        <tag>后端</tag>
+         
+         
+           
+             
+              <breadCrumb title="API" url="http://www.shenhuiyang.com/categories/API/"/>
+          
+             
+              <breadCrumb title="后端" url="http://www.shenhuiyang.com/categories/API/%E5%90%8E%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.shenhuiyang.com/2017/02/22/session%E5%92%8Ccookie%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%8C%E5%A4%9A%E5%8F%B0web%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%85%B1%E4%BA%ABsession%EF%BC%8C%E7%A6%81%E7%94%A8cookie%E5%90%8Esession%E6%98%AF%E5%90%A6%E5%8F%AF%E7%94%A8/</loc>
     <lastmod>2017-02-22T14:29:23.331Z</lastmod>
     <data>
@@ -31,9 +56,9 @@
         <title>app后端用户登陆方案设计</title>
         <pubTime>2017-02-22T13:12:06.000Z</pubTime>
         
-        <tag>APP</tag>
-         
         <tag>后端</tag>
+         
+        <tag>APP</tag>
          
          
            
