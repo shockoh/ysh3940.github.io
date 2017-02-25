@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="MySql," />
+  <meta name="keywords" content="杂谈," />
 
 
 
@@ -87,16 +87,16 @@
 
 
 
-<meta name="description" content="MySQL索引原理及慢查询优化原文链接：http://tech.meituan.com/mysql-index.html">
+<meta name="description" content="离职飞牛杂谈从2015年10月入职飞牛也将近有1年半了，刚刚进飞牛，任务是把php接口改造成java接口，半年内php的开发人员陆续的离职了，终于在年后我们小组领导也离职了，java开发的话也有5、6个，2016年飞牛还是陆续招人的，2016年IOS、安卓、触屏，离职的人不少，几乎和我对接的人都换了，特别是触屏开发的，走的都差不多了，都没几个认识的了，哎，最熟悉的几个同事基本的离职了，而我的话，那">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MySql索引原理以及慢查询优化">
-<meta property="og:url" content="http://www.shenhuiyang.com/2017/02/24/MySql索引原理以及慢查询优化/index.html">
+<meta property="og:title" content="离职飞牛杂谈">
+<meta property="og:url" content="http://www.shenhuiyang.com/2017/02/26/离职飞牛杂谈/index.html">
 <meta property="og:site_name" content="楊晓川">
-<meta property="og:description" content="MySQL索引原理及慢查询优化原文链接：http://tech.meituan.com/mysql-index.html">
-<meta property="og:updated_time" content="2017-02-24T12:56:00.231Z">
+<meta property="og:description" content="离职飞牛杂谈从2015年10月入职飞牛也将近有1年半了，刚刚进飞牛，任务是把php接口改造成java接口，半年内php的开发人员陆续的离职了，终于在年后我们小组领导也离职了，java开发的话也有5、6个，2016年飞牛还是陆续招人的，2016年IOS、安卓、触屏，离职的人不少，几乎和我对接的人都换了，特别是触屏开发的，走的都差不多了，都没几个认识的了，哎，最熟悉的几个同事基本的离职了，而我的话，那">
+<meta property="og:updated_time" content="2017-02-25T23:55:27.721Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MySql索引原理以及慢查询优化">
-<meta name="twitter:description" content="MySQL索引原理及慢查询优化原文链接：http://tech.meituan.com/mysql-index.html">
+<meta name="twitter:title" content="离职飞牛杂谈">
+<meta name="twitter:description" content="离职飞牛杂谈从2015年10月入职飞牛也将近有1年半了，刚刚进飞牛，任务是把php接口改造成java接口，半年内php的开发人员陆续的离职了，终于在年后我们小组领导也离职了，java开发的话也有5、6个，2016年飞牛还是陆续招人的，2016年IOS、安卓、触屏，离职的人不少，几乎和我对接的人都换了，特别是触屏开发的，走的都差不多了，都没几个认识的了，哎，最熟悉的几个同事基本的离职了，而我的话，那">
 
 
 
@@ -124,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://www.shenhuiyang.com/2017/02/24/MySql索引原理以及慢查询优化/"/>
+  <link rel="canonical" href="http://www.shenhuiyang.com/2017/02/26/离职飞牛杂谈/"/>
 
 
 
 
 
-  <title> MySql索引原理以及慢查询优化 | 楊晓川 </title>
+  <title> 离职飞牛杂谈 | 楊晓川 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -310,7 +310,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://www.shenhuiyang.com/2017/02/24/MySql索引原理以及慢查询优化/">
+  <link itemprop="mainEntityOfPage" href="http://www.shenhuiyang.com/2017/02/26/离职飞牛杂谈/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="楊晓川">
@@ -334,7 +334,7 @@
             
             
               
-                MySql索引原理以及慢查询优化
+                离职飞牛杂谈
               
             
           </h1>
@@ -349,8 +349,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-24T20:53:22+08:00">
-                2017-02-24
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-26T07:16:21+08:00">
+                2017-02-26
               </time>
             
 
@@ -372,8 +372,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/MySql/" itemprop="url" rel="index">
-                    <span itemprop="name">MySql</span>
+                  <a href="/categories/杂谈/" itemprop="url" rel="index">
+                    <span itemprop="name">杂谈</span>
                   </a>
                 </span>
 
@@ -389,7 +389,7 @@
 
           
           
-             <span id="/2017/02/24/MySql索引原理以及慢查询优化/" class="leancloud_visitors" data-flag-title="MySql索引原理以及慢查询优化">
+             <span id="/2017/02/26/离职飞牛杂谈/" class="leancloud_visitors" data-flag-title="离职飞牛杂谈">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -418,7 +418,7 @@
       
 
       
-        <h1 id="MySQL索引原理及慢查询优化"><a href="#MySQL索引原理及慢查询优化" class="headerlink" title="MySQL索引原理及慢查询优化"></a>MySQL索引原理及慢查询优化</h1><p>原文链接：<a href="http://tech.meituan.com/mysql-index.html" title="MySQL索引原理及慢查询优化" target="_blank" rel="external">http://tech.meituan.com/mysql-index.html</a></p>
+        <h1 id="离职飞牛杂谈"><a href="#离职飞牛杂谈" class="headerlink" title="离职飞牛杂谈"></a>离职飞牛杂谈</h1><p>从2015年10月入职飞牛也将近有1年半了，刚刚进飞牛，任务是把php接口改造成java接口，半年内php的开发人员陆续的离职了，终于在年后我们小组领导也离职了，java开发的话也有5、6个，2016年飞牛还是陆续招人的，2016年IOS、安卓、触屏，离职的人不少，几乎和我对接的人都换了，特别是触屏开发的，走的都差不多了，都没几个认识的了，哎，最熟悉的几个同事基本的离职了，而我的话，那时还不考虑离职，继续做着再说，虽然在飞牛只是做些网管层接口开发，并没有涉及到底层的具体业务开发，但是我们这边还是每天看起来像最忙的，什么bug都优先指派到我们这边，开会我们组的必到，bug优先我们这边查问题，基本反正什么问题都能扯到我们组，哎，无语了。<br><br>2016年10月开始把，飞牛停止招人了，也开除了一些实习生和外包的，合同到期的也让人家走了，绩效也陆续没了（我到2017才没的，还好那时差不多要走了），2016年底我陆续开始找下家了（在飞牛没事的也会看看面试的东西，为跳槽做准备），阿里的流程太慢了，等到年底都没发offer，等的的心碎了（阿里p6差那么一点点点点，哎，当时觉得年薪还是满意的），年后终于拿到offer了，这个之后也了几个面试，现场只去了点评的复试，其他都是电话的（电面的都是拉钩上的，就1、2个把），阿里的面了千寻、蚂蚁（前天电面的）、口碑，还有面了点评的初试和复试，面试就这个几个。<br><br>昨天和一个同在上海的大学朋友聊了下，做php的，蛮厉害的，2017年2月换的工作25K，年薪算了下35.5万，还有1个去了小米金融也有20K+吧，他们2个去年兼职也做了一些，哎，朋友多还是好啊，还可以做兼职，今年叫他们有兼职项目了也给我做做。<br><br>2017年注定是飞牛最惨的一年了，只出不进，据我知道的，现在有3个去了唯品会，1个快钱，我们组我知道的还有2个要走的，可能要走的还会有很多（飞牛2017年中应该会有一波大离职）。</p>
 
       
     </div>
@@ -458,7 +458,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/MySql/" rel="tag"># MySql</a>
+            <a href="/tags/杂谈/" rel="tag"># 杂谈</a>
           
         </div>
       
@@ -471,8 +471,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/02/23/API接口设计-注意问题/" rel="next" title="API接口设计 注意问题">
-                <i class="fa fa-chevron-left"></i> API接口设计 注意问题
+              <a href="/2017/02/24/MySql索引原理以及慢查询优化/" rel="next" title="MySql索引原理以及慢查询优化">
+                <i class="fa fa-chevron-left"></i> MySql索引原理以及慢查询优化
               </a>
             
           </div>
@@ -480,10 +480,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/02/26/离职飞牛杂谈/" rel="prev" title="离职飞牛杂谈">
-                离职飞牛杂谈 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -642,7 +638,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#MySQL索引原理及慢查询优化"><span class="nav-number">1.</span> <span class="nav-text">MySQL索引原理及慢查询优化</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#离职飞牛杂谈"><span class="nav-number">1.</span> <span class="nav-text">离职飞牛杂谈</span></a></li></ol></div>
             
 
           </div>

@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://www.shenhuiyang.com/2017/02/26/%E7%A6%BB%E8%81%8C%E9%A3%9E%E7%89%9B%E6%9D%82%E8%B0%88/</loc>
+    <lastmod>2017-02-25T23:55:27.721Z</lastmod>
+    <data>
+        <display>
+        <title>离职飞牛杂谈</title>
+        <pubTime>2017-02-25T23:16:21.000Z</pubTime>
+        
+        <tag>杂谈</tag>
+         
+         
+           
+             
+              <breadCrumb title="杂谈" url="http://www.shenhuiyang.com/categories/%E6%9D%82%E8%B0%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.shenhuiyang.com/2017/02/24/MySql%E7%B4%A2%E5%BC%95%E5%8E%9F%E7%90%86%E4%BB%A5%E5%8F%8A%E6%85%A2%E6%9F%A5%E8%AF%A2%E4%BC%98%E5%8C%96/</loc>
     <lastmod>2017-02-24T12:56:00.231Z</lastmod>
     <data>
@@ -31,9 +51,9 @@
         <title>API接口设计 注意问题</title>
         <pubTime>2017-02-23T13:56:48.000Z</pubTime>
         
-        <tag>后端</tag>
-         
         <tag>API</tag>
+         
+        <tag>后端</tag>
          
          
            
@@ -76,9 +96,9 @@
         <title>app后端用户登陆方案设计</title>
         <pubTime>2017-02-22T13:12:06.000Z</pubTime>
         
-        <tag>APP</tag>
-         
         <tag>后端</tag>
+         
+        <tag>APP</tag>
          
          
            
