@@ -122,7 +122,7 @@ Hadoop是一个由Apache基金会所开发的分布式系统基础架构。">
 <meta property="og:image" content="http://i.imgur.com/ImhzOlN.png">
 <meta property="og:image" content="http://i.imgur.com/x9Lr5pm.png">
 <meta property="og:image" content="http://i.imgur.com/zoRZK66.png">
-<meta property="og:updated_time" content="2017-04-25T13:48:13.499Z">
+<meta property="og:updated_time" content="2017-04-25T13:55:48.522Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hadoop、Hbase、Zookeeper安装以及使用">
 <meta name="twitter:description" content="Hadoop、Hbase、Zookeeper安装以及使用Hadoop简介
@@ -471,7 +471,7 @@ Hadoop是一个由Apache基金会所开发的分布式系统基础架构。">
       
 
       
-        <h1 id="Hadoop、Hbase、Zookeeper安装以及使用"><a href="#Hadoop、Hbase、Zookeeper安装以及使用" class="headerlink" title="Hadoop、Hbase、Zookeeper安装以及使用"></a>Hadoop、Hbase、Zookeeper安装以及使用</h1><h1 id="Hadoop简介"><a href="#Hadoop简介" class="headerlink" title="Hadoop简介"></a>Hadoop简介</h1><ol>
+        <h1 id="Hadoop、Hbase、Zookeeper安装以及使用"><a href="#Hadoop、Hbase、Zookeeper安装以及使用" class="headerlink" title="Hadoop、Hbase、Zookeeper安装以及使用"></a>Hadoop、Hbase、Zookeeper安装以及使用</h1><h1 id="Hadoop简介"><a href="#Hadoop简介" class="headerlink" title="Hadoop简介"></a>Hadoop简介</h1><ul>
 <li>Hadoop是一个由Apache基金会所开发的分布式系统基础架构。<a id="more"></a></li>
 <li>Hadoop实现了一个分布式文件系统（Hadoop Distributed File System），简称HDFS。HDFS有高容错性的特点，并且设计用来部署在低廉的（low-cost）硬件上；而且它提供高吞吐量（high throughput）来访问应用程序的数据。</li>
 <li>Hadoop的框架最核心的设计就是：HDFS和MapReduce。HDFS为海量的数据提供了存储，则MapReduce为海量的数据提供了计算。<h1 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h1>Hadoop带有用Java语言编写的框架，因此运行在 Linux 生产平台上是非常理想的。</li>
@@ -489,7 +489,7 @@ Hadoop是一个由Apache基金会所开发的分布式系统基础架构。">
 <h2 id="压缩算法的比较"><a href="#压缩算法的比较" class="headerlink" title="压缩算法的比较"></a>压缩算法的比较</h2><p><img src="http://i.imgur.com/pwlTvWa.png" alt=""><br>注：来自《HBase: The Definitive Guide》<br>其中：</p>
 </blockquote>
 </li>
-</ol>
+</ul>
 <p>1）GZIP的压缩率最高，但是其实CPU密集型的，对CPU的消耗比其他算法要多，压缩和解压速度也慢；</p>
 <p>2）LZO的压缩率居中，比GZIP要低一些，但是压缩和解压速度明显要比GZIP快很多，其中解压速度快的更多；</p>
 <p>3）Zippy/Snappy的压缩率最低，而压缩和解压速度要稍微比LZO要快一些。</p>
