@@ -17,13 +17,6 @@
 
     
     <entry>
-      <title><![CDATA[离职飞牛杂谈]]></title>
-      <url>%2F2017%2F02%2F26%2F%E7%A6%BB%E8%81%8C%E9%A3%9E%E7%89%9B%E6%9D%82%E8%B0%88%2F</url>
-      <content type="text"><![CDATA[离职飞牛杂谈从2015年10月入职飞牛也将近有1年半了，刚刚进飞牛，任务是把php接口改造成java接口，半年内php的开发人员陆续的离职了，终于在年后我们小组领导也离职了，java开发的话也有5、6个，2016年飞牛还是陆续招人的，2016年IOS、安卓、触屏，离职的人不少，几乎和我对接的人都换了，特别是触屏开发的，走的都差不多了，都没几个认识的了，哎，最熟悉的几个同事基本的离职了，而我的话，那时还不考虑离职，继续做着再说，虽然在飞牛只是做些网管层接口开发，并没有涉及到底层的具体业务开发，但是我们这边还是每天看起来像最忙的，什么bug都优先指派到我们这边，开会我们组的必到，bug优先我们这边查问题，基本反正什么问题都能扯到我们组，哎，无语了。2016年10月开始把，飞牛停止招人了，也开除了一些实习生和外包的，合同到期的也让人家走了，绩效也陆续没了（我到2017才没的，还好那时差不多要走了），2016年底我陆续开始找下家了（在飞牛没事的也会看看面试的东西，为跳槽做准备），阿里的流程太慢了，等到年底都没发offer，等的的心碎了（阿里p6差那么一点点点点，哎，当时觉得年薪还是满意的），年后终于拿到offer了，这个之后也看了几个面试，现场只去了点评的复试，其他都是电话的（电面的都是拉钩上的，就1、2个把），阿里的面了千寻、蚂蚁（前天电面的）、口碑，还有面了点评的初试和复试，面试就这个几个。昨天和一个同在上海的大学朋友聊了下，做php的，蛮厉害的，2017年2月换的工作25K，年薪算了下35.5万，还有1个去了小米金融也有20K+吧，他们2个去年兼职也做了一些，哎，朋友多还是好啊，还可以做兼职，今年叫他们有兼职项目了也给我做做。2017年注定是飞牛最惨的一年了，只出不进，据我知道的，现在有3个去了唯品会，1个快钱，我们组我知道的还有2个要走的，可能要走的还会有很多（飞牛2017年中应该会有一波大离职）。2017年继续努力，希望熟练掌握java更底层的东西，多看几本书籍，和别人比较下，就能看到自己的不足，去面试才知道自己有哪些需要去更深入的学习的。看到别人的高薪自己不要自暴自弃就可以了，也不要有点嘲讽别人，要是等到30多岁（飞牛一30多岁的同事了，连一些java最基本的都不会，最新的框架什么的都是不去学，每次看到别人高薪了，讲话又带有嘲讽的语气，哎，叫我怎么说呢，保重我也要走了）了再努力还来得吗？生活不能太安逸了，太安逸了就会有些后悔的！]]></content>
-    </entry>
-
-    
-    <entry>
       <title><![CDATA[MySql索引原理以及慢查询优化]]></title>
       <url>%2F2017%2F02%2F24%2FMySql%E7%B4%A2%E5%BC%95%E5%8E%9F%E7%90%86%E4%BB%A5%E5%8F%8A%E6%85%A2%E6%9F%A5%E8%AF%A2%E4%BC%98%E5%8C%96%2F</url>
       <content type="text"><![CDATA[MySQL索引原理及慢查询优化原文链接：http://tech.meituan.com/mysql-index.html]]></content>
@@ -59,23 +52,9 @@
 
     
     <entry>
-      <title><![CDATA[美团点评复试]]></title>
-      <url>%2F2017%2F02%2F20%2F%E7%BE%8E%E5%9B%A2%E7%82%B9%E8%AF%84%E5%A4%8D%E8%AF%95%2F</url>
-      <content type="text"><![CDATA[【美团点评面试邀约】 杨申辉： 您好！以下是您的面试安排：【面试时间】：2月21日 10：00【面试地点】：上海市长宁区安化路492号易园C座2楼前台。【交通】：地铁2,3,4号线（中山公园站7号出口左拐，沿凯旋路向南直走300米处，新视界眼科医院处再左拐，安化路再向前300米处）可到达。]]></content>
-    </entry>
-
-    
-    <entry>
       <title><![CDATA[kafka与MQ比较]]></title>
       <url>%2F2017%2F02%2F20%2Fkafka%E4%B8%8EMQ%E6%AF%94%E8%BE%83%2F</url>
       <content type="text"><![CDATA[应用场景方面RabbitMQ,遵循AMQP协议，由内在高并发的erlanng语言开发，用在实时的对可靠性要求比较高的消息传递上。 kafka是Linkedin于2010年12月份开源的消息发布订阅系统,它主要用于处理活跃的流式数据,大数据量的数据处理上。 架构模型方面RabbitMQ遵循AMQP协议，RabbitMQ的broker由Exchange,Binding,queue组成，其中exchange和binding组成了消息的路由键；客户端Producer通过连接channel和server进行通信，Consumer从queue获取消息进行消费（长连接，queue有消息会推送到consumer端，consumer循环从输入流读取数据）。rabbitMQ以broker为中心；有消息的确认机制。 kafka遵从一般的MQ结构，producer，broker，consumer，以consumer为中心，消息的消费信息保存的客户端consumer上，consumer根据消费的点，从broker上批量pull数据；无消息确认机制。 吞吐量kafka具有高的吞吐量，内部采用消息的批量处理，zero-copy机制，数据的存储和获取是本地磁盘顺序批量操作，具有O(1)的复杂度，消息处理的效率很高。 rabbitMQ在吞吐量方面稍逊于kafka，他们的出发点不一样，rabbitMQ支持对消息的可靠的传递，支持事务，不支持批量的操作；基于存储的可靠性的要求存储可以采用内存或者硬盘。 可用性方面rabbitMQ支持miror的queue，主queue失效，miror queue接管。 kafka的broker支持主备模式。 集群负载均衡方面kafka采用zookeeper对集群中的broker、consumer进行管理，可以注册topic到zookeeper上；通过zookeeper的协调机制，producer保存对应topic的broker信息，可以随机或者轮询发送到broker上；并且producer可以基于语义指定分片，消息发送到broker的某分片上。 rabbitMQ的负载均衡需要单独的loadbalancer进行支持。]]></content>
-    </entry>
-
-    
-    <entry>
-      <title><![CDATA[飞牛无限API项目简介]]></title>
-      <url>%2F2017%2F02%2F20%2F%E9%A3%9E%E7%89%9B%E6%97%A0%E9%99%90API%E9%A1%B9%E7%9B%AE%E7%AE%80%E4%BB%8B%2F</url>
-      <content type="text"><![CDATA[无线API项目结构说明 member-fnapp通过pom.xml引用utils-fnapputils-fnapp工程中主要是一些公共的代码，配置的常量，操作数据库的代码，公用的POJO，发送验证码和检验验证码等等member-fnapp工程中主要包含controller和service层代码 配置文件本地和服务器分离本地的配置在local目录，线上的配置在server目录下，线上的application.properties存在的单独的svn目录通过不用的maven来加载的不用的配置目录 项目启动maven命令clean package -Plocal -Dmaven.test.skip=true tomcat:run如果在服务器则使用 –PServer 代替 –PLocal 项目框架说明jersey spring mybatisspring.version：3.2.11.RELEASEjersey.version：1.11mybatis.version：1.2.2 token以及APP登录态说明http://member-fnapp.feiniugo.com/token/GetToken/t508接口入参：1234567891011121314&#123; &quot;apiVersion&quot;: &quot;t5.07&quot;, &quot;areaCode&quot;: &quot;&quot;, &quot;token&quot;: &quot;&quot;, &quot;body&quot;: &#123; &quot;deviceId&quot;: &quot;H5TOUCH&quot;, &quot;osType&quot;: 3, &quot;osVersionNo&quot;: &quot;1.0&quot;, &quot;appVersionNo&quot;: &quot;1.0&quot; &#125;, &quot;device_id&quot;: &quot;&quot;, &quot;addrId&quot;: &quot;&quot;, &quot;re_rule&quot;: &quot;2&quot;&#125; 接口出参：12345678&#123; &quot;elapsedTime&quot;: 149, &quot;errorCode&quot;: 0, &quot;errorDesc&quot;: &quot;获取token成功&quot;, &quot;body&quot;: &#123; &quot;token&quot;: &quot;f112461ffca85914359c72b99af22b76&quot; &#125;&#125; getToken接口成功返回后，会在表记录一条记录表结构如下：http://member-fnapp.feiniugo.com/loginAction/login/t508入参：123456789101112131415&#123; &quot;apiVersion&quot;: &quot;t5.08&quot;, &quot;areaCode&quot;: &quot;CS000018-320600-320698-0&quot;, &quot;token&quot;: &quot;7cfcfad7091123eee50a31f445a275b7&quot;, &quot;device_id&quot;: &quot;ab2bfae6d5ef6bbc5a1e01105869e111&quot;, &quot;body&quot;: &#123; &quot;username&quot;: &quot;18657378370&quot;, &quot;password&quot;: &quot;yang1022&quot;, &quot;captcha&quot;: &quot;&quot;, &quot;remoteCaptcha&quot;: &quot;&quot;, &quot;osType&quot;: 3 &#125;, &quot;addrId&quot;: &quot;865A5439-6D14-4A66-8064-CCEF88B426BF&quot;, &quot;re_rule&quot;: &quot;2&quot;&#125; 出参：12345678910111213&#123; &quot;elapsedTime&quot;: 274, &quot;errorCode&quot;: 0, &quot;errorDesc&quot;: &quot;登录成功&quot;, &quot;body&quot;: &#123; &quot;mem_guid&quot;: &quot;2B97A0AF-FE1D-112A-2834-0F9557574190&quot;, &quot;authcode&quot;: &quot;ok9u9FzN/ZhY9vj2R6sZEMOyzvYWGTL5N8/lcBcmEzxU9xCP2D6bK2zPyN9Vh5dWNS+gzOAiODxXgWS7fPegU5XiffmlwSOXjQGBX3/Pkfx3Yeau8oTRH5668x9k8eC9fPk=&quot;, &quot;isMultiple&quot;: 0, &quot;token&quot;: &quot;03553fc51ab89e81a6a00b045afc3e8e&quot;, &quot;msgID&quot;: &quot;&quot;, &quot;msgText&quot;: &quot;&quot; &#125;&#125; 登录成功后会此表写入一条记录表结构如下：用户调用登出接口后，会删除此条记录]]></content>
     </entry>
 
     
